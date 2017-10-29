@@ -1,17 +1,17 @@
-title: John Smith
-description: My Personal Blog
-author: John Smith
+title: Dimitris Athanasakoglou
+description: My Personal Website
+author: Dimitris Athanasakoglou
 logo: /hcz-jekyll-blog/static/img/avatar.png
-github: https://github.com/codeasashu
+github: https://github.com/dathanasakoglou
 about: Freelance developer
 
-baseurl: "https://codeasashu.github.io/hcz-jekyll-blog"
-url: "https://codeasashu.github.io/hcz-jekyll-blog"
+baseurl: "https://dathanasakoglou.github.io/"
+url: "https://dathanasakoglou.github.io/"
 
 allowsearch: true
 
-disqus_shortname: aboutashu
-google_analytics: UA-72862926-1
+disqus_shortname:
+google_analytics: UA-80721578-1
 
 share:
   twitter_username: \#
