@@ -1,12 +1,12 @@
 title: Dimitris Athanasakoglou
 description: My Personal Website
 author: Dimitris Athanasakoglou
-logo: /dathanasakoglou.github.io/static/img/avatar1.png
+logo: /dathanasakoglou.github.io/static/img/avatar.svg
 github: https://github.com/dathanasakoglou
 about: Junior Data Scientist
 
-baseurl: "https://dathanasakoglou.github.io/"
-url: "https://dathanasakoglou.github.io/"
+baseurl: "https://dathanasakoglou.github.io"
+url: "https://dathanasakoglou.github.io"
 
 allowsearch: true
 
