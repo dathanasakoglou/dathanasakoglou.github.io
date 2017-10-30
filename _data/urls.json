@@ -23,7 +23,8 @@
   {
     "text": "Github",
     "url": "/https://github.com/dathanasakoglou",
-    "icon": "fa-github"
+    "icon": "fa-github",
+    "target": _blank
   },
   {
     "text": "XML Feed",
