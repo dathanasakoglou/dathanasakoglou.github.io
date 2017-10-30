@@ -8,19 +8,19 @@
   },
   {
     "text": "About",
-    "url": "about/",
+    "url": "/about",
     "icon": "fa-comments",
     "target": _self
   },
   {
     "text": "Projects",
-    "url": "projects/",
+    "url": "/projects",
     "icon": "fa-desktop",
     "target": _self
   },
   {
     "text": "Resume",
-    "url": "static/files/cv.pdf",
+    "url": "/static/files/cv.pdf",
     "icon": "fa-graduation-cap",
   },
   {
@@ -31,7 +31,7 @@
   },
   {
     "text": "XML Feed",
-    "url": "feed.xml",
+    "url": "/feed.xml",
     "icon": "fa-feed",
     "target": _blank
   }
