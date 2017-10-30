@@ -17,7 +17,7 @@
   },
   {
     "text": "Resume",
-    "url": "/files/cv.pdf",
+    "url": "static/files/cv.pdf",
     "icon": "fa-graduation-cap",
   },
   {
