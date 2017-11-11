@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DotA Soundboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div class="keys">
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">Get back</span>
+    </div>
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">Stick</span>
+    </div>
+    <div data-key="68" class="key">
+      <kbd>D</kbd>
+      <span class="sound">Lose</span>
+    </div>
+    <div data-key="70" class="key">
+      <kbd>F</kbd>
+      <span class="sound">Room</span>
+    </div>
+    <div data-key="71" class="key">
+      <kbd>G</kbd>
+      <span class="sound">Roshan</span>
+    </div>
+    <div data-key="72" class="key">
+      <kbd>H</kbd>
+      <span class="sound">Wow</span>
+    </div>
+    <div data-key="74" class="key">
+      <kbd>J</kbd>
+      <span class="sound">All dead</span>
+    </div>
+    <div data-key="75" class="key">
+      <kbd>K</kbd>
+      <span class="sound">I'm done</span>
+    </div>
+    <div data-key="76" class="key">
+      <kbd>L</kbd>
+      <span class="sound">Disaster</span>
+    </div>
+  </div>
+
+  <audio data-key="65" src="sounds/e-back.mp3"></audio>
+  <audio data-key="83" src="sounds/e-stick.mp3"></audio>
+  <audio data-key="68" src="sounds/e-lose.mp3"></audio>
+  <audio data-key="70" src="sounds/e-room.mp3"></audio>
+  <audio data-key="71" src="sounds/e-roshan.mp3"></audio>
+  <audio data-key="72" src="sounds/ld-wow.mp3"></audio>
+  <audio data-key="74" src="sounds/ld-alldead.mp3"></audio>
+  <audio data-key="75" src="sounds/a-imdone.mp3"></audio>
+  <audio data-key="76" src="sounds/t-disastah.mp3"></audio>
+
+
+
+<script>
+  window.addEventListener('keydown', function(e) {
+    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+    if (!audio) return; //stops the function from running altogether
+    audio.currentTime = 0; //rewind to the start
+    audio.play();
+    key.classList.add('playing');
+    setTimeout(function() {
+      key.classList.remove('playing');
+    },100);
+  });
+</script>
+
+</body>
+</html>

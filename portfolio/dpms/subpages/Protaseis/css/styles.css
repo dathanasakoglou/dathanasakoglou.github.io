@@ -1,0 +1,22 @@
+body {
+font-family: 'Oxygen', sans-serif !important;
+}
+.navbar {
+    margin-bottom: 20px;
+}
+h5.title {
+    font-weight: bold;
+}
+#comment {
+  height: 150px;
+}
+body > main > div > div > div:nth-child(8) > button {
+  background-color: #1565c0;
+}
+body > header > nav > div > a:nth-child(2) {
+  font-family: 'Cookie', cursive;
+  font-size: 25px;
+}
+.nav a {
+   font-size: 1.1em !important;
+ }
