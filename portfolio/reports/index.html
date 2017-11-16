@@ -126,7 +126,7 @@ $(document).ready(function () {
 </div>
 
 
-<pre class="r"><code>load.libraries &lt;- c('corrplot', 'ggplot2', 'dplyr', 'psych')
+<pre class="r"><code>load.libraries &lt;- c('corrplot', 'ggplot2', 'dplyr', 'psych', 'car')
 install.lib &lt;- load.libraries[!load.libraries %in% installed.packages()]
 for(libs in install.lib) install.packages(libs, dependencies = TRUE)
 sapply(load.libraries, require, character = TRUE)</code></pre>
@@ -148,8 +148,17 @@ sapply(load.libraries, require, character = TRUE)</code></pre>
 <pre><code>## The following objects are masked from 'package:ggplot2':
 ## 
 ##     %+%, alpha</code></pre>
-<pre><code>## corrplot  ggplot2    dplyr    psych 
-##     TRUE     TRUE     TRUE     TRUE</code></pre>
+<pre><code>## Loading required package: car</code></pre>
+<pre><code>## 
+## Attaching package: 'car'</code></pre>
+<pre><code>## The following object is masked from 'package:psych':
+## 
+##     logit</code></pre>
+<pre><code>## The following object is masked from 'package:dplyr':
+## 
+##     recode</code></pre>
+<pre><code>## corrplot  ggplot2    dplyr    psych      car 
+##     TRUE     TRUE     TRUE     TRUE     TRUE</code></pre>
 <div id="structure-of-the-data" class="section level2">
 <h2>Structure of the Data</h2>
 <p>The housing dataset has 1728 rows and 16 variables with price being the DV. There are no missing values in the data.</p>
