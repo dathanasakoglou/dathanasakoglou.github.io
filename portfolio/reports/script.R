@@ -6,7 +6,6 @@ library(dplyr)
 library(ggplot2)
 library(corrplot)
 library(psych)
-library(car)
 
 ##Read data
 saratoga<-read.csv("data/SaratogaHouses.csv", header=TRUE)
